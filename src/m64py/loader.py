@@ -231,7 +231,7 @@ class PosixLibraryLoader(LibraryLoader):
 
         path = ctypes.util.find_library(libname)
         if path:
-            yield os.path.join("/lib", path)
+            yield os.path.join("/usr/lib64", path)
 
 
 class _WindowsLibrary(object):
